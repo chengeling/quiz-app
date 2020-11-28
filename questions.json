@@ -1,0 +1,28 @@
+{
+    "questions": [
+        {
+            "q": "teledetekcja",
+            "a": "remote sensing"
+        },
+        {
+            "q": "szerokość geograficzna",
+            "a": "latitude"
+        },
+        {
+            "q": "północ",
+            "a": "north"
+        },
+        {
+            "q": "mapa",
+            "a": "map"
+        },
+        {
+            "q": "nizina",
+            "a": "lowland"
+        },
+        {
+            "q": "geokodowanie",
+            "a": "geocoding"
+        }
+    ]
+}
