@@ -1,28 +1,29 @@
 {
+    "title": "Test z języka JavaScipt",
     "questions": [
         {
-            "q": "teledetekcja",
-            "a": "remote sensing"
+            "q": "W którym roku poraz pierwszy pojawił się język Javascript?",
+            "a": "1995"
         },
         {
-            "q": "szerokość geograficzna",
-            "a": "latitude"
+            "q": "Podaj nazwę metody, która usuwa ostatni element z listy.",
+            "a": "pop"
         },
         {
-            "q": "północ",
-            "a": "north"
+            "q": "Co zwróci warunek: 0.1 + 0.2 === 0.3?",
+            "a": "false"
         },
         {
-            "q": "mapa",
-            "a": "map"
+            "q": "Podaj nazwę funkcji, która wypisuje w konsoli podaną wartość w nawiasach.",
+            "a": "console.log"
         },
         {
-            "q": "nizina",
-            "a": "lowland"
+            "q": "Za pomocą jakiej metody pobieramy elementy po id elementu?",
+            "a": "getElementById"
         },
         {
-            "q": "geokodowanie",
-            "a": "geocoding"
+            "q": "Rozwiń skrót AJAX.",
+            "a": "Asynchronous JavaScript and XML"
         }
     ]
 }
