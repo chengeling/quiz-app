@@ -13,7 +13,7 @@ startBtn.addEventListener('click', () => {
 })
 
 //Główny program
-let xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open('GET', 'questions.json');
 xhr.responseType = 'json';
 xhr.send();
@@ -27,17 +27,17 @@ xhr.addEventListener('load', () => {
 
     // Generowanie pytań i inputów
     for(let i = 1; i < questions.length + 1; i++) {
-        let { q, a } = questions[i - 1];
-        let questionText = document.createElement('h3');
+        const { q, a } = questions[i - 1];
+        const questionText = document.createElement('h3');
         questionText.classList.add(`question-text${i}`);
-        questionText.textContent = q
+        questionText.textContent = q;
         questionBox.appendChild(questionText);
-        let answerInput = document.createElement('input');
+        const answerInput = document.createElement('input');
         answerInput.classList.add(`answer-input${i}`)
         questionBox.appendChild(answerInput);
     }
     
-    let checkAnswersBtn = document.createElement('button');
+    const checkAnswersBtn = document.createElement('button');
     checkAnswersBtn.classList.add('check-answer-btn')
     checkAnswersBtn.textContent = 'Sprawdź odpowiedzi!';
     questionBox.appendChild(checkAnswersBtn);
@@ -46,8 +46,8 @@ xhr.addEventListener('load', () => {
     checkAnswersBtn.addEventListener('click', () => {
         let score = 0;
         for(let i = 1; i < questions.length + 1; i++) {
-            let userAnswer = document.querySelector(`.answer-input${i}`)
-            let { q: question, a: goodAnswer } = questions[i - 1];
+            const userAnswer = document.querySelector(`.answer-input${i}`)
+            const { q: question, a: goodAnswer } = questions[i - 1];
             if(userAnswer.value.toLowerCase() === goodAnswer.toLowerCase()) {
                 score+=1;
                 userAnswer.style.borderColor = 'rgb(39, 233, 39)';
